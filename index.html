@@ -1,0 +1,142 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favorite Book Quotes</title>
+    <link href="/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen Old Mincho&display=swap" rel="stylesheet">
+    <style media="screen">
+      body{
+        font-family: 'Zen Old Mincho', serif;
+        }
+      header{
+        text-align:center;
+        background-image: url(images/background-blog.jpg);
+        background-position: center;
+        background-size: cover;
+        color: Black;
+        margin: -8px;
+      }
+      a {
+        color: white;
+      }
+      h1 {
+        font-size: 70px;
+        color: black;
+      }
+      h2{
+        text-align: center;
+      }
+      img {
+        margin: 40px 0px 0px 0px;
+        border: 7px solid rgba(14, 19, 51, 0.5);
+        border-radius: 50%;
+        width: 270px; height: 330px;
+      }
+      ul {
+        padding: 10px;
+        background: rgba(14, 19, 51, 0.5);
+      }
+      li {
+        display: inline;
+        padding: 0px 10px 0px 10px;
+      }
+      article {
+        max-width: 500px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 36px;
+          padding: 5px;
+        }
+        li {
+          padding: 5px;
+          display: block;
+        }
+      }
+      button{
+        background-color: #e6e6ff;
+        color: black;
+        padding: 10px;
+        font-size: 18PX;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://64.media.tumblr.com/447bff3a726d6d0c23091ff2c5f1e574/2b91d4f65de20cff-55/s1280x1920/9525f6f776dbfb0b8ad7089a229a04af2b188247.jpg" alt="">
+      <h1>The stormlight Archive Quotes</h1>
+      <h2>Arnoldo Magaña</h2>
+      <ul>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Favorite Books</a></li>
+        <li><a href="#">Favorite Characters</a></li>
+        <li><a href="#">More Quotes</a></li>
+
+      </ul>
+    </header>
+    <article class="all-quotes">
+      <h1>Favorite Quotes</h1>
+      <article class="quote" id="dalinar">
+        <h2>Dalinar-Oathbringer</h2>
+        <p>“Sometimes a hypocrite is nothing more than a man in
+           the process of changing.”</p>
+           <button>I Like it too!</button>
+      </article>
+      <article class="quote" id="kaladin">
+        <h2>Kaladin-The Way of Kings</h2>
+        <p>“I don't know what I am either. A bridgeman? A surgeon?
+           A soldier? A slave? Those are all just labels. Inside,
+           I'm me. A very different me than I was a year ago,
+           but I can't worry about that, so I just keep moving
+           and hope my feet take me where I need to go.”</p>
+           <button>I Like it too!</button>
+      </article>
+      <article class="quote" id="lirin">
+        <h2>Lirin-The way of kings</h2>
+        <p>“Somebody has to start. Somebody has to step forward
+           and do what is right, because it is right. If nobody
+           starts, then others cannot follow.”</p>
+           <button>I Like it too!</button>
+      </article>
+      <article class="quote" id="dalinar2">
+        <h2>Dalinar-Oathbringer</h2>
+        <p>“The most important words a man can say are,
+           “I will do better.” These are not the most important
+           words any man can say. I am a man, and they are what
+           I needed to say.</p>
+
+        <p>The ancient code of the Knights Radiant says
+           “journey before destination.” Some may call it a
+           simple platitude, but it is far more.
+           A journey will have pain and failure.
+           It is not only the steps forward that we must
+           accept. It is the stumbles. The trials.
+           The knowledge that we will fail.
+           That we will hurt those around us.</p>
+
+        <p>But if we stop, if we accept the person we are when
+           we fall, the journey ends. That failure becomes our
+           destination. To love the journey is to accept no such
+           end. I have found, through painful experience, that
+           the most important step a person can take is always
+           the next one.</p>
+
+        <p>I’m certain some will feel threatened by this record.
+           Some few may feel liberated. Most will simply feel that
+           it should not exist. I needed to write it anyway.”</p>
+           <button>I Like it too!</button>
+      </article>
+    </article>
+    <script>
+       $("button").on("click", function() {
+         alert("Clicked!");
+       });
+     </script>
+  </body>
+</html>
